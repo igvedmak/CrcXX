@@ -3,7 +3,8 @@ A generic implementation of the CRC algorithm using Boost.
 
 Example usage:
 
-```using namespace expbr;
+```
+using namespace expbr;
 
 #include "CrcXX.h"
 #include <iostream>
@@ -27,4 +28,12 @@ int main() {
 
     return 0;
 }
+```
+
+Output:
+```
+CRC32 of "Hello world!": 1b851995
+CRC16 of {0x01, 0x02, 0x03, 0x04, 0x05}: 47886
+CRC32 of "Boost is awesome!": 23888
+CRC16 of {0x01, 0x02, 0x03, 0x04, 0x05}: bb0e
 ```
