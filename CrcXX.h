@@ -109,7 +109,7 @@ namespace Utils {
      *                                          If T is unsigned int or unsigned short, the result will be returned as an integer.
      *                                          Otherwise, 0 will be returned.
      */
-    template<typename T, int Bits = 32, typename U = const char*>
+    template<typename T, int Bits = 32>
     T crcXX(std::string const& buffer) {
         return crcXX<T, Bits>(buffer.data(), buffer.length());
     }
